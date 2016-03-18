@@ -1,0 +1,13 @@
+To run this PoC properly take the following steps:
+
+Download HiQPdf Library from http://www.hiqpdf.com/ and extract the archive.
+Open HiQPdf_PoC_WebAPI.sln in your Microsoft Visual Studio.
+Open the project HiQPdf_PoC_WebAPI in your Solution Explorer.
+Open the References folder in the project and remove the failing referenc to the HiQPDF Library.
+Rightclick on the References folder and open "Add Reference..." in the context menue.
+Browse for HiQPdf.dll fitting your system in the extracted Download from above.
+
+Now run the project and test it by opening http://localhost:54684/api/HTML2PDF?URL=http://google.de&cssMediaType=print
+The given port depends an your RUN configuration.
+
+Author: David Koller / XMV Solutions GmbH
